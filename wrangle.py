@@ -29,7 +29,7 @@ def get_zillow_data():
 def get_new_zillow_data():
     """Returns a dataframe of all 2017 properties that are Single Family Residential"""
 
-    sql = '''Select bathroomcnt, bedroomcnt, calculatedfinishedsquarefeet, taxvaluedollarcnt, yearbuilt, taxamount, fips, transactiondate from properties_2017
+    sql = '''Select bathroomcnt, bedroomcnt, calculatedfinishedsquarefeet, taxvaluedollarcnt, yearbuilt, fips, transactiondate from properties_2017
 join propertylandusetype using (propertylandusetypeid)
 join predictions_2017 using (parcelid)
 where propertylandusedesc = "Single Family Residential"
@@ -48,8 +48,8 @@ def optimize_types(df):
     # Convert some columns to integers
     # fips, yearbuilt, and bedrooms can be integers
     df["fips"] = df["fips"].astype(int)
-    df["yearbuilt"] = df["yearbuilt"].astype(int)
-    df["bedroomcnt"] = df["bedroomcnt"].astype(int)    
+    df["bedroomcnt"] = df["bedroomcnt"].astype(int)  
+    df["yearbuilt"] = df["yearbuilt"].astype(int)  
     df["taxvaluedollarcnt"] = df["taxvaluedollarcnt"].astype(int)
     df["calculatedfinishedsquarefeet"] = df["calculatedfinishedsquarefeet"].astype(int)
     return df
@@ -82,7 +82,7 @@ def wrangle_zillow():
     handles outliers w/ manual logic
     returns a clean dataframe
     """
-    df = get_zillow_data()
+    df = get_new_zillow_data()
 
     df = handle_nulls(df)
 
