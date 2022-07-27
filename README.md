@@ -1,8 +1,9 @@
 # Zillow_Regression_Project
 
 ## Project goals 
-Goals for this project are to proved insights on th housing market in three area codes in southern california and to find the key drivers of property value for single family properties. 
-
+Goals for this project are to proved insights on the housing market in three area codes in Southern California
+- To find the key drivers of property value for single family properties in 2017
+- Find the best ML model to predict home value.
 
 ## Project description 
 
