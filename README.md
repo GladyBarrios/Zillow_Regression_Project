@@ -3,11 +3,13 @@
 ## Project goals 
 Goals for this project are to proved insights on th housing market in three area codes in southern california and to find the key drivers of property value for single family properties. 
 
-## project plan 
 
+## project description 
 
+The main goal for this project is to use Machine learning models to help predict the home values using a home report of 2017 and using single family Residendials.With this project we will wrangle raw zillow data, explore the data, run statistical test, and end it off with predicting home values with our machine learning models. This prediction is important for not only zillow as a company but our future customers and familys who are looking for afordable housing in California. At the end of the presentation We will discover the best model for prediction of housing cost out of all the models tested. 
 
 ## Initial Questions 
+
 - Question 1- Is there a relationship with the number of bathrroms a property has and the property value ?
 
 - Question 2 - does a prperty with a certain number of bathrooms cause an increase in property value?
@@ -21,15 +23,28 @@ Goals for this project are to proved insights on th housing market in three area
 
 
 ## Data Dictionary 
-bathroomcnt
-bedroomcnt	
-calculatedfinishedsquarefeet	
-taxvaluedollarcnt
-yearbuilt
-fips
-County
+bathroomcnt- this displays a bathroom count of 1-6
 
-## project description 
+bedroomcnt- this displays a bedroom count of 1-6	
+
+calculatedfinishedsquarefeet- The Number of sqarefeet per property
+
+taxvaluedollarcnt- The cost of the property  
+
+yearbuilt- Year the property was built 
+
+fips- this is the area code the property resides 
+
+County- The name of the county the property is in, three properties include Los Angeles County, Ventura County, Orange County
+
+
+## project plan 
+Aquiring the data
+
+Planning the data
+
+
+
 
 
 ## steps to reproduce 
